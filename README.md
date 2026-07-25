@@ -1,7 +1,7 @@
 # Challenge Codeurs Pro — Chatbot 100 % local
 
 **Nom du dépôt :** `challenge_24_07_2026`  
-**Organisation :** [Codeurs-pro](https://github.com/Codeurs-pro)  
+**Compte :** [CodeursPro](https://github.com/CodeursPro)  
 **Début du challenge :** dès réception de cet énoncé  
 **Fin des soumissions :** **mercredi à 23h59 GMT**  
 **Publication des résultats :** **vendredi soir**
@@ -86,11 +86,11 @@ ollama run mon-assistant-faq
 
 ### 1. Faire un fork (avant tout push)
 
-> **Ne poussez pas directement sur le dépôt de l’organisation.**  
+> **Ne poussez pas directement sur le dépôt officiel CodeursPro.**  
 > Travaillez **uniquement** depuis **votre fork**.
 
 1. Ouvrez le dépôt officiel :  
-   **https://github.com/Codeurs-pro/challenge_24_07_2026**
+   **https://github.com/CodeursPro/challenge_24_07_2026**
 2. Cliquez sur **Fork** (en haut à droite).
 3. Créez le fork sur **votre compte GitHub** personnel.
 4. Clonez **votre fork** en local :
@@ -141,7 +141,7 @@ git push -u origin challenge/<votre-pseudo>
 ### 5. Ouvrir une Pull Request vers le dépôt officiel
 
 1. Sur GitHub, ouvrez une **Pull Request** depuis votre fork  
-   vers `Codeurs-pro/challenge_24_07_2026` (branche `main`).
+   vers `CodeursPro/challenge_24_07_2026` (branche `main`).
 2. Titre suggéré : `[Challenge] <votre-pseudo> — <cas d’usage>`
 3. Dans la description, résumez :
    - cas d’usage ;
@@ -157,7 +157,7 @@ Les soumissions doivent être reçues **avant mercredi 23h59 GMT**.
 ```text
 ┌─────────────────┐     fork      ┌──────────────────────────┐
 │  Dépôt officiel │ ───────────►  │  Votre fork (personnel)  │
-│  Codeurs-pro/   │               │  <user>/challenge_...    │
+│  CodeursPro/   │               │  <user>/challenge_...    │
 │  challenge_...  │ ◄───────────  │                          │
 └─────────────────┘   Pull Request└──────────────────────────┘
          ▲
@@ -166,7 +166,7 @@ Les soumissions doivent être reçues **avant mercredi 23h59 GMT**.
    Équipe Codeurs Pro
 ```
 
-1. **Le dépôt de l’organisation** sert de référence (énoncé + réception des PR).
+1. **Le dépôt officiel CodeursPro** sert de référence (énoncé + réception des PR).
 2. **Chaque participant fork** pour avoir son propre espace de travail.
 3. **Le développement se fait en local** : modèle LLM local (souvent Ollama) + votre code.
 4. **Le system prompt** cadre le rôle du bot et limite les réponses hors sujet.
