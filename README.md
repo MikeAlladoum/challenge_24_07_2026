@@ -1,10 +1,14 @@
 # Challenge Codeurs Pro — Chatbot 100 % local
 
 **Nom du dépôt :** `challenge_24_07_2026`  
-**Compte :** [CodeursPro](https://github.com/CodeursPro)  
+**Dépôt officiel (prioritaire) :** [CodeursPro/challenge_24_07_2026](https://github.com/CodeursPro/challenge_24_07_2026)  
+**Dépôt de secours :** [KELI-Kekeli-Christ/challenge_24_07_2026](https://github.com/KELI-Kekeli-Christ/challenge_24_07_2026)  
 **Début du challenge :** dès réception de cet énoncé  
 **Fin des soumissions :** **mercredi à 23h59 GMT**  
 **Publication des résultats :** **vendredi soir**
+
+> **À lire avant de forker :** utilisez d’abord le dépôt **CodeursPro**.  
+> Si le lien officiel ne s’ouvre pas (page introuvable / 404), forkez alors le **dépôt de secours** ci-dessus.
 
 ---
 
@@ -86,14 +90,16 @@ ollama run mon-assistant-faq
 
 ### 1. Faire un fork (avant tout push)
 
-> **Ne poussez pas directement sur le dépôt officiel CodeursPro.**  
+> **Ne poussez pas directement sur le dépôt source.**  
 > Travaillez **uniquement** depuis **votre fork**.
 
-1. Ouvrez le dépôt officiel :  
+1. Ouvrez **en priorité** le dépôt officiel :  
    **https://github.com/CodeursPro/challenge_24_07_2026**
-2. Cliquez sur **Fork** (en haut à droite).
-3. Créez le fork sur **votre compte GitHub** personnel.
-4. Clonez **votre fork** en local :
+2. **Si ce lien ne marche pas** (404 / dépôt introuvable), utilisez le dépôt de secours :  
+   **https://github.com/KELI-Kekeli-Christ/challenge_24_07_2026**
+3. Cliquez sur **Fork** (en haut à droite).
+4. Créez le fork sur **votre compte GitHub** personnel.
+5. Clonez **votre fork** en local :
 
 ```bash
 git clone https://github.com/<VOTRE_USERNAME>/challenge_24_07_2026.git
@@ -138,10 +144,11 @@ git commit -m "feat: mon chatbot local pour le challenge"
 git push -u origin challenge/<votre-pseudo>
 ```
 
-### 5. Ouvrir une Pull Request vers le dépôt officiel
+### 5. Ouvrir une Pull Request vers le dépôt source
 
-1. Sur GitHub, ouvrez une **Pull Request** depuis votre fork  
-   vers `CodeursPro/challenge_24_07_2026` (branche `main`).
+1. Sur GitHub, ouvrez une **Pull Request** depuis votre fork vers la branche `main` du dépôt que vous avez forké :
+   - **prioritaire :** `CodeursPro/challenge_24_07_2026`
+   - **sinon (secours) :** `KELI-Kekeli-Christ/challenge_24_07_2026`
 2. Titre suggéré : `[Challenge] <votre-pseudo> — <cas d’usage>`
 3. Dans la description, résumez :
    - cas d’usage ;
@@ -155,23 +162,28 @@ Les soumissions doivent être reçues **avant mercredi 23h59 GMT**.
 ## Comment ça marche (vue d’ensemble)
 
 ```text
-┌─────────────────┐     fork      ┌──────────────────────────┐
-│  Dépôt officiel │ ───────────►  │  Votre fork (personnel)  │
-│  CodeursPro/   │               │  <user>/challenge_...    │
-│  challenge_...  │ ◄───────────  │                          │
-└─────────────────┘   Pull Request└──────────────────────────┘
-         ▲
-         │  revue / évaluation
-         │
-   Équipe Codeurs Pro
+┌──────────────────────────────┐
+│  1) CodeursPro/...  (prioritaire)
+│  2) KELI-Kekeli-Christ/... (si lien KO)
+└──────────────┬───────────────┘
+               │ fork
+               ▼
+┌──────────────────────────┐
+│  Votre fork (personnel)  │
+│  <user>/challenge_...    │
+└──────────────┬───────────┘
+               │ Pull Request
+               ▼
+        Équipe Codeurs Pro
 ```
 
-1. **Le dépôt officiel CodeursPro** sert de référence (énoncé + réception des PR).
-2. **Chaque participant fork** pour avoir son propre espace de travail.
-3. **Le développement se fait en local** : modèle LLM local (souvent Ollama) + votre code.
-4. **Le system prompt** cadre le rôle du bot et limite les réponses hors sujet.
-5. **La Pull Request** est votre soumission officielle pour l’évaluation.
-6. **Les résultats** sont communiqués **vendredi soir**.
+1. **Priorité :** forkez [CodeursPro/challenge_24_07_2026](https://github.com/CodeursPro/challenge_24_07_2026).
+2. **Secours :** si ce lien ne marche pas, forkez [KELI-Kekeli-Christ/challenge_24_07_2026](https://github.com/KELI-Kekeli-Christ/challenge_24_07_2026).
+3. **Chaque participant** travaille uniquement depuis **son fork**.
+4. **Le développement se fait en local** : modèle LLM local (souvent Ollama) + votre code.
+5. **Le system prompt** cadre le rôle du bot et limite les réponses hors sujet.
+6. **La Pull Request** vers le dépôt source est votre soumission officielle.
+7. **Les résultats** sont communiqués **vendredi soir**.
 
 ---
 
@@ -188,6 +200,7 @@ Peu importe le cas choisi : ce qui compte, c’est la **maîtrise du comportemen
 
 ## Checklist avant soumission
 
+- [ ] J’ai tenté d’abord le dépôt **CodeursPro**, sinon le **dépôt de secours**
 - [ ] J’ai **forké** le dépôt avant de pousser mon code
 - [ ] Mon chatbot tourne **entièrement en local**
 - [ ] Un **system prompt** (ou équivalent) définit clairement le rôle
